@@ -1,4 +1,4 @@
-package kevcold.med.voll.api.direccion;
+package kevcold.med.voll.api.domain.direccion;
 
 import jakarta.validation.constraints.NotBlank;
 

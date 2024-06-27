@@ -1,7 +1,7 @@
-package kevcold.med.voll.api.medico;
+package kevcold.med.voll.api.domain.medico;
 
 import jakarta.persistence.*;
-import kevcold.med.voll.api.direccion.Direccion;
+import kevcold.med.voll.api.domain.direccion.Direccion;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

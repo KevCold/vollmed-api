@@ -1,6 +1,6 @@
 package kevcold.med.voll.api.repository;
 
-import kevcold.med.voll.api.medico.Medico;
+import kevcold.med.voll.api.domain.medico.Medico;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

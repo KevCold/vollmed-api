@@ -1,4 +1,4 @@
-package kevcold.med.voll.api.medico;
+package kevcold.med.voll.api.domain.medico;
 
 public enum Especialidad {
     ORTOPEDIA,

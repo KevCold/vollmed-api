@@ -1,8 +1,8 @@
-package kevcold.med.voll.api.medico;
+package kevcold.med.voll.api.domain.medico;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
-import kevcold.med.voll.api.direccion.DatosDireccion;
+import kevcold.med.voll.api.domain.direccion.DatosDireccion;
 
 public record DatosActualizarMedicos(
         @NotNull
