@@ -34,14 +34,3 @@ public class AutenticacionController {
         return ResponseEntity.ok(new DatosJWToken(JWToken));
     }
 }
-/*
-@Bean
-public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-    return http.csrf().disable()
-            .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-            .and().authorizeHttpRequests()
-            .requestMatchers(HttpMethod.POST, "/login").permitAll()
-            .anyRequest().authenticated()
-            .and().build();
-}
- */
