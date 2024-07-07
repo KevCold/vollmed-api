@@ -1,0 +1,7 @@
+spring:
+  profile.active: test
+  datasource:
+    url: jdbc:mysql://${DB_HOST}/vollmed_api_test?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: Thelastelement22
+

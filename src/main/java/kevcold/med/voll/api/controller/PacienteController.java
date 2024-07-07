@@ -1,5 +1,6 @@
 package kevcold.med.voll.api.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import kevcold.med.voll.api.domain.paciente.*;
 import kevcold.med.voll.api.repository.IPacienteRepository;
@@ -14,6 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("/pacientes")
+@SecurityRequirement(name = "bearer-key")
 public class PacienteController {
 
     @Autowired
@@ -37,7 +39,7 @@ public class PacienteController {
 
     @PutMapping
     @Transactional
-    public ResponseEntity actualizar(@RequestBody @Valid DatosRegistroPaciente.DatosActualizarPaciente datos) {
+    public ResponseEntity actualizar(@RequestBody @Valid DatosActualizacionPaciente datos) {
         var paciente = repository.getReferenceById(datos.id());
         paciente.actualizarInformacion(datos);
 

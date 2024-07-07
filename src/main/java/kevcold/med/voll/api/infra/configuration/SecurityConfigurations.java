@@ -1,4 +1,4 @@
-package kevcold.med.voll.api.configuration;
+package kevcold.med.voll.api.infra.configuration;
 
 import kevcold.med.voll.api.infra.security.SecurityFilter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +29,7 @@ public class SecurityConfigurations {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.POST, "/login").permitAll()
+                        .requestMatchers("/swagger-ui.html", "/v3/api-docs/**", "/swagger-ui/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);

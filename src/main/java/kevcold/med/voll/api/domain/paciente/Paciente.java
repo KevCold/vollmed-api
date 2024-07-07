@@ -39,12 +39,12 @@ public class Paciente {
         this.direccion = new Direccion(datos.direccion());
     }
 
-    public void actualizarInformacion(DatosRegistroPaciente.DatosActualizarPaciente datos) {
+    public void actualizarInformacion(DatosActualizacionPaciente datos) {
         if (datos.nombre() != null) {
             this.nombre = datos.nombre();
         }
-        if (datos.documentoIdentidad() != null) {
-            this.documento = datos.documentoIdentidad();
+        if (datos.telefono() != null) {
+            this.telefono = datos.telefono();
         }
         if (datos.direccion() != null) {
             this.direccion = direccion.actualizarDatos(datos.direccion());

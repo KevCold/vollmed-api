@@ -1,4 +1,4 @@
-package kevcold.med.voll.api.configuration;
+package kevcold.med.voll.api.infra.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;

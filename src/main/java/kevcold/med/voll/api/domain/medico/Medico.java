@@ -38,15 +38,15 @@ public class Medico {
         this.direccion = new Direccion(datosRegistroMedico.direccion());
     }
 
-    public void actualizarDatos(DatosActualizarMedicos datosActualizarMedicos) {
-        if (datosActualizarMedicos.nombre() != null){
-            this.nombre = datosActualizarMedicos.nombre();
+    public void actualizarDatos(DatosActualizarMedicos datosActualizarMedico) {
+        if (datosActualizarMedico.nombre() != null){
+            this.nombre = datosActualizarMedico.nombre();
         }
-        if (datosActualizarMedicos.documento() != null){
-            this.documento = datosActualizarMedicos.documento();
+        if (datosActualizarMedico.documento() != null){
+            this.documento = datosActualizarMedico.documento();
         }
-        if (direccion.actualizarDatos(datosActualizarMedicos.direccion()) != null){
-            this.direccion = direccion.actualizarDatos(datosActualizarMedicos.direccion());
+        if (direccion.actualizarDatos(datosActualizarMedico.direccion()) != null){
+            this.direccion = direccion.actualizarDatos(datosActualizarMedico.direccion());
         }
     }
 

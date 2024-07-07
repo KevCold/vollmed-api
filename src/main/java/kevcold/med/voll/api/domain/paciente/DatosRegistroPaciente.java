@@ -24,8 +24,4 @@ public record DatosRegistroPaciente(
         String documento,
 
         @NotNull @Valid DatosDireccion direccion) {
-
-        public static record DatosActualizarPaciente(@NotNull Long id, String nombre, String documentoIdentidad,
-                                                     DatosDireccion direccion) {
-        }
 }
